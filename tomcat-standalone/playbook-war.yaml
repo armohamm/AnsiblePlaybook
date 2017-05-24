@@ -2,7 +2,7 @@
 - hosts: tomcatServer
   vars:
   - warName: helloworld.war
-  - warRemotePath: /path/to/put/war
+  - warRemotePath: /usr/share/tomcat/
 
   tasks:
   - name: Download WAR to server
