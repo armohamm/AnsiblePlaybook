@@ -6,7 +6,7 @@
 
   tasks:
   - name: Download WAR to server
-    command: wget http://example.com/file.war -O {{ warRemotePath }}/{{ warName }}
+    command: wget https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/sample.war -O {{ warRemotePath }}/{{ warName }}
     notify:
         - restart tomcat7
         
