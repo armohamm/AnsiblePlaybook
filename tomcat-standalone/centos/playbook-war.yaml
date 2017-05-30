@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: all
   vars:
   - warName: helloworld.war
   - warRemotePath: /usr/share/tomcat/webapps
