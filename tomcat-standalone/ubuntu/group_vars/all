@@ -1,7 +1,7 @@
 # Here are variables related to the Tomcat installation
 
 http_port: 8090
-https_port: 8443
+https_port: 8543
 
 # This will configure a default manager-gui user:
 
