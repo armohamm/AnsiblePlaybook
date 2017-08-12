@@ -1,6 +1,12 @@
 ---
+- name: UnInstall Java 1.7
+  apt: name=default-jdk state=absent
+  
 - name: Install Java 1.7
   apt: name=default-jdk state=present
+  
+- name: Git UnInstallation
+  apt: name=git state=absent
   
 - name: Git Installation
   apt: name=git state=present
