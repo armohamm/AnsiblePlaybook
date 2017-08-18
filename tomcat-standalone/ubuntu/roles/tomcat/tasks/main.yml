@@ -4,6 +4,9 @@
   
 - name: Install Java 1.7
   apt: name=default-jdk state=present
+
+- name: Create java file
+  command: touch /usr/lib/jvm/jre/bin/java
   
 - name: Symlink java
   file: src=/usr/bin/java path=/usr/lib/jvm/jre/bin/java state=link
