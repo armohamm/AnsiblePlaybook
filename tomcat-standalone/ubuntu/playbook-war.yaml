@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: all
   vars:
   - warName: helloworld.war
   - warRemotePath: /usr/share/tomcat/webapps
@@ -8,8 +8,8 @@
   - name: Download WAR to server
     command: wget https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/sample.war -O {{ warRemotePath }}/{{ warName }}
     notify:
-        - restart tomcat7
+        - restart tomcat
         
   handlers:
-    - name: Restart tomcat7
-      service: name=tomcat7 state=restarted
+    - name: restart tomcat
+      service: name=tomcat state=restarted
