@@ -33,7 +33,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 export CATALINA_HOME=/usr/share/tomcat  
  
 #CATALINA_BASE is the location of the configuration files of this instance of Tomcat
-export CATALINA_BASE=/var/apphome/tomcat-node-1
+export CATALINA_BASE=/usr/share/tomcat  
  
 #TOMCAT_USER is the default user of tomcat
 export TOMCAT_USER=tomcat
